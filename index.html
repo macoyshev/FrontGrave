@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wih=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Mystery of Mierley</title>
+</head>
+
+<body>
+    <div id="cursor">
+        <span class="light">🔦</span>
+        <div class="light-ray"></div>
+    </div>
+
+    <img id ="layout" src="\layout.jpg"; alt="Loading...">
+   
+    <a class = "rip"  href="https://github.com/Mierley" >
+    <img  id = "rip1" src="\rip_1.png">
+    </a>
+
+    <a class = "rip"  href="https://www.instagram.com/mier_ley/" >
+        <img  id = "rip2" src="\rip_1.png">
+    </a>
+
+    <a class = "rip"  href="https://vk.com/drozd_mierley" >
+        <img  id = "rip3" src="\rip_1.png">
+    </a>
+
+    <a class = "rip"  href="https://t.me/mierley" >
+        <img  id = "rip4" src="\rip_1.png">
+    </a>
+
+</body>
+
+</html>
+
+
+<script>
+    var cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', function(e)
+    {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + "px";
+        cursor.style.top= y + "px";
+    }) 
+</script>

@@ -1,0 +1,83 @@
+#cursor 
+{
+    position: absolute;
+}
+
+.rip
+{
+    mix-blend-mode: multiply;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(10px 10px 10px rgb(62, 233, 68));
+    cursor: none;
+}
+
+#rip1{
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+#rip2{
+    position: relative;
+    top: 250px;
+    left: 200px;
+}
+#rip3{
+    position: relative;
+    top: 200px;
+    left: 250px;
+}
+#rip4{
+    position: relative;
+    top: 250px;
+    left: 300px;
+}
+
+#layout 
+{
+    mix-blend-mode: multiply;
+    min-height: auto;
+    min-width: 100%;
+
+    width: 100%;
+    height: auto;
+
+    
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+body {
+
+    min-height: 100%;
+    min-width: 100%;
+
+    background-image: url("dark_layout.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    color: black;
+}
+
+.light-ray {   
+    background-color:  #f8c377;
+    height: 200px;
+    width:200px;
+  /*   margin-left: 2rem; */
+    border-radius: 50%;
+   
+}
+
+.light {
+  font-size: 2rem;
+  max-height: 50px;
+  max-width: 50px;
+  margin-bottom:20px;
+  display: flex;
+  transform: rotate(-0.45turn);
+}
