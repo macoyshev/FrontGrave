@@ -1,15 +1,20 @@
-#cursor 
-{
-    position: absolute;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.rip
-{
-    mix-blend-mode: multiply;
-    filter: brightness(120%);
-    filter: contrast(120%);
-    filter: drop-shadow(10px 10px 10px rgb(62, 233, 68));
+body {
+    background-image: url("./images/cemetery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: none;
+}
+
+#cursor 
+{
+    z-index: 3;
+    position: absolute;
 }
 
 #rip1{
@@ -48,36 +53,24 @@
     top: 0;
     left: 0;
 }
-body {
 
-    min-height: 100%;
-    min-width: 100%;
-
-    background-image: url("dark_layout.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: none;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-
-    color: black;
-}
-
-.light-ray {   
+.light {   
     background-color:  #f8c377;
     height: 200px;
     width:200px;
-  /*   margin-left: 2rem; */
     border-radius: 50%;
-   
 }
 
-.light {
+.flash {
   font-size: 2rem;
-  max-height: 50px;
-  max-width: 50px;
   margin-bottom:20px;
-  display: flex;
-  transform: rotate(-0.45turn);
+}
+
+.rip
+{
+    mix-blend-mode: multiply;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(10px 10px 10px rgb(62, 233, 68));
+    cursor: none;
 }
