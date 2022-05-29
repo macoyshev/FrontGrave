@@ -4,47 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wih=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/styles/style.css">
     <title>The Mystery of Mierley</title>
 </head>
 
 <body>
     <div class="cemetery">
-        <div id="cursor">
-            <span class="flash">🔦</span>
-            <div class="light"></div>
+
+        <div id="cursor"></div>
+        
+        <div class="gravestones">
+            <div class="gravestone rip-1"></div>
+            <div class="gravestone rip-2"></div>
+            <div class="gravestone rip-3"></div>
+            <div class="gravestone rip-4"></div>
         </div>
-        
-        
-        <a class = "rip"  href="https://github.com/Mierley" >
-            <img  id = "rip1" src="static/images/rip_1.png">
-        </a>
-
-        <a class = "rip"  href="https://www.instagram.com/mier_ley/" >
-            <img  id = "rip2" src="static/images/rip_1.png">
-        </a>
-
-        <a class = "rip"  href="https://vk.com/drozd_mierley" >
-            <img  id = "rip3" src="static/images/rip_1.png">
-        </a>
-
-        <a class = "rip"  href="https://t.me/mierley" >
-            <img  id = "rip4" src="static/images/rip_1.png">
-        </a>
 
     </div>  
+
+    <script src="static/scripts/index.js"></script>
 </body>
-
-</html>
-
-
-<script>
-    var cursor = document.getElementById('cursor');
-    document.addEventListener('mousemove', function(e)
-    {
-        var x = e.clientX;
-        var y = e.clientY;
-        cursor.style.left = x + "px";
-        cursor.style.top= y + "px";
-    }) 
-</script>
+<html
